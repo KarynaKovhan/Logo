@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title> figma </title>
-    <link rel="stylesheet" href="../styles/index.css">
-  </head>
-   <body>
+ <head>
+  <meta charset="utf-8">
+  <title> figma </title>
+  <link rel="stylesheet" href="../styles/index.css">
+ </head>
+    <body>
     <header>
-     <div>
+       <nav>
         <svg id="logo" width="72" height="36" viewBox="0 0 72 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.968 1.4H6.248V30.2H14.936V35H0.968V1.4ZM25.1 35.48C22.508 35.48 20.524 34.744 19.148 33.272C17.772 
             31.8 17.084 29.72 17.084 27.032V9.368C17.084 6.68 17.772 4.6 19.148 3.128C20.524 1.656 22.508 0.919998 25.1 0.919998C27.692 
@@ -25,9 +25,7 @@
             63.0688 35.48ZM63.0688 30.68C64.8928 30.68 65.8047 29.576 65.8047 27.368V9.032C65.8047 6.824 64.8928 5.72 63.0688 5.72C61.2448 
             5.72 60.3328 6.824 60.3328 9.032V27.368C60.3328 29.576 61.2448 30.68 63.0688 30.68Z" fill="#FDFDFD"/>
         </svg>
-    </div> 
-       <nav>
-         <div class="menu">
+        <div class="menu">
            <ul>
             <li><a href="">Company</a></li>
             <li><a href="">Services</a></li>
@@ -36,8 +34,7 @@
             <li><a href="">Portfolio</a></li>
             <li><a href="">Contact us</a></li>
            </ul>
-         </div>
-    <div> 
+        </div>
         <svg id="lupa" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16.6665 14.6665H15.6132L15.2399 14.3065C16.8399 12.4399 17.6665 9.89319 17.2132 7.18652C16.5865 
             3.47986 13.4932 0.519858 9.75986 0.0665242C4.11986 -0.626809 -0.626809 4.11986 0.0665242 9.75986C0.519858 
@@ -54,166 +51,158 @@
                  26.3333C12.4667 26.3333 13.6667 25.1333 13.6667 23.6666H8.33333C8.33333 25.1333 9.52 26.3333 11 26.3333Z" fill="#949BB7"/>
         </svg>
         <img id="photo" src="../images/Avatar.png">    
-    </div>
-       </nav>
+        </nav>
     </header>
-    <hr>
     <main> 
         <section>
             <h1>Contact us!</h1>
-         <div class="title">Need an experienced and skilled hand with custom IT projects?<br>
+        <div class="title">Need an experienced and skilled hand with custom IT projects?<br>
              Fill out the form to get free consultation. 
-         </section>
         </div>
+        </section>
         <section class="container">
           <form>
-                <p>Your company name*</p>
-                  <input type="text" required>
-                  <br/>
-            <div>
-                 <p>Nature of Business*</p>
-                <input type="text" required> 
-            </div>
-                  <br>
-            <div>
-                   <label for="date">
-                    <br/>
-                 <p>Data of registration</p><br/>
-                    </label>
-                    <br/>
-                <input type="date" id="date" name="expiration" required>   
-            </div>
-               <div>
-                    <p>Contact name</p>
-                    <input type="text" required> 
-                </div>
-                <div>
-                    <p>Contact phone</p>
-                    <input type="text" required> 
-                </div>
-                <div>
-                    <p>Email*</p>
-                    <input type="text" required> 
-                </div>
-                <div>
-                    <input id="file-input" type="file" name="file" multiple>
-                    <label id="label-text" for="file-input">Upload Additional file</label>
-                <p id="helpertext">File size of your documents should not exceed 10MB</p>
-                    <input id="submit" type="submit"  value="Submit">
-                </p>
-                </div>
-                <div> 
-                    <p id="helpertext"> <input id="button" type="radio" name="protect"> I want to protect my data by signing an NDA </p> 
-                </div>
-                <div>                               
-           <p>Country of registration* </p> 
-              <select id="select">Select</select>
-                </div>
-                <div class="topnav">
-                    <input type="text" placeholder="Search..">
-                  </div>
-            <div>     
-                <p>Address</p>
-                <input type="text" required> 
-            </div>
-            <div>     
-                <p>Postcode</p>
-                <input type="text" required> 
-            </div>
+            <label for="companyname">
+                Your company name* 
+            </label>
+            <input type="text" id="companyname" required>
+            <label for="nature">
+                 Nature of Business*
+            </label>
+            <input type="text" id="nature" required> 
+            <label for="date">
+                Data of registration
+            </label>
+            <input type="date" id="date" name="expiration" required>   
+            <label id="contactname">
+                Contact name
+            </label>       
+            <input type="text" id="contractname" required> 
+            <label for="contractphone">
+                Contact phone
+            </label>
+            <input type="text" id="contractphone"  minlength="18" maxlength="18" required> 
+            <label for="emaill">
+                Email*
+            </label>
+            <input type="text" id="emaill" required> 
             <div> 
-                <p>Let’s talk about your idea</p>
-                <textarea id="textarea" name="text"> </textarea>
+                <label id="label-text" for="file-input">
+                    Upload Additional file
+                </label>
             </div>
-            <div> 
-                <input id="slider" type="range" list="tickmarks">
-                <datalist id="tickmarks">
-                    <option value="0"></option>
-                    <option value="10"></option>
-                    <option value="20"></option>
-                    <option value="30"></option>
-                    <option value="40"></option>
-                    <option value="50"></option>
-                    <option value="60"></option>
-                    <option value="70"></option>
-                    <option value="80"></option>
-                    <option value="90"></option>
-                    <option value="100"></option></datalist>
-                </div>
-            <div>
-                <p> <input type="checkbox" id="button" name="data" value="yes" />I want to protect my data by signing an NDA</p>
-                <p> <input type="checkbox" id="button" checked name="data" value="no" />I have read and accept the Terms and Conditions </p>
-            </div>
+            <input id="file-input" type="file" name="file" multiple>
+            <p id="helpertext">File size of your documents should not exceed 10MB</p>
+            <input id="submit" type="submit"  value="Submit">
+            <p id="helpertext"> <input id="button" type="radio" name="protect">
+                 I want to protect my data by signing an NDA 
+            </p>                               
+           <label for="select">
+            Country of registration*
+           </label> 
+            <input type="search" id="select"  placeholder="Select" required>   
+            <svg id="selectsvg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.88 0.790059L6 4.67006L2.12 0.790059C1.73 0.400059 1.1 0.400059 0.710003 0.790059C0.320003 1.18006
+                 0.320003 1.81006 0.710003 2.20006L5.3 6.79006C5.69 7.18006 6.32 7.18006 6.71 6.79006L11.3 2.20006C11.69 1.81006 
+                 11.69 1.18006 11.3 0.790059C10.91 0.410059 10.27 0.400059 9.88 0.790059Z" fill="#FDFDFD"/>
+            </svg>
+            <label for="adress">
+                Address
+            </label>
+            <input type="text" id="adress" required>      
+                <label for="postcode">
+                    Postcode
+                </label>
+                <input type="text" id="postcode" required> 
+                <label for="textarea">
+                    Lets’s talk about your idea
+                </label> 
+                <textarea id="textarea" name="text"></textarea>
+                    <svg width="392" height="20" viewBox="0 0 392 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="8" width="392" height="4" rx="2" fill="#949BB7"/>
+                        <rect y="8" width="199" height="4" rx="2" fill="#EA51BC"/>
+                        <circle cx="10" cy="10" r="10" fill="#FDFDFD"/>
+                        <circle cx="189" cy="10" r="10" fill="#FDFDFD"/>
+                    </svg>
+            <p id="helpertext"><input type="checkbox" id="button" name="data" value="yes" />
+                I want to protect my data by signing an NDA
+            </p>
+            <p id="helpertext"><input type="checkbox" id="button" checked name="data" value="no" />
+                I have read and accept the Terms and Conditions
+            </p>
            </form> 
-    </section>
+        </section>
    </main>
-        <footer> 
-            <section class="container2">
-            <div>
-                <p id="bigtext">Career</p>
-                <p>If you are interested in working at Logo send us your CV to careers@logo.com
-                    and we can talk</p> 
+    <footer> 
+        <section class="container2">
+            <div class="block-1">
+            <p id="bigtext">Career</p>
+            <p>If you are interested in working at Logo send us your CV to careers@logo.com
+                 and we can talk
+            </p> 
             </div>
-            <div>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 1.80723C12.6506 1.80723 13.0121 1.80723 14.0964 1.80723C15.0602 1.80723 15.5422 2.04819 15.9036 
-                        2.16868C16.3855 2.40964 16.747 2.53012 17.1084 2.89157C17.4699 3.25301 17.7108 3.61446 17.8313 4.09639C17.9518 
-                        4.45783 18.0723 4.93976 18.1928 5.90362C18.1928 6.98795 18.1928 7.22892 18.1928 10C18.1928 12.7711 18.1928 13.0121 
-                        18.1928 14.0964C18.1928 15.0602 17.9518 15.5422 17.8313 15.9036C17.5904 16.3855 17.4699 16.747 17.1084 17.1084C16.747 
-                        17.4699 16.3855 17.7108 15.9036 17.8313C15.5422 17.9518 15.0602 18.0723 14.0964 18.1928C13.0121 18.1928 12.7711 18.1928 
-                        10 18.1928C7.22892 18.1928 6.98795 18.1928 5.90362 18.1928C4.93976 18.1928 4.45783 17.9518 4.09639 17.8313C3.61446 17.5904
-                         3.25301 17.4699 2.89157 17.1084C2.53012 16.747 2.28916 16.3855 2.16868 15.9036C2.04819 15.5422 1.92771 15.0602 1.80723 
-                         14.0964C1.80723 13.0121 1.80723 12.7711 1.80723 10C1.80723 7.22892 1.80723 6.98795 1.80723 5.90362C1.80723 4.93976 
-                         2.04819 4.45783 2.16868 4.09639C2.40964 3.61446 2.53012 3.25301 2.89157 2.89157C3.25301 2.53012 3.61446 2.28916 4.09639
-                          2.16868C4.45783 2.04819 4.93976 1.92771 5.90362 1.80723C6.98795 1.80723 7.3494 1.80723 10 1.80723ZM10 0C7.22892 
-                          0 6.98795 0 5.90362 0C4.81928 0 4.09639 0.240965 3.49398 0.481928C2.89157 0.722892 2.28916 1.08434 1.68675 
-                          1.68675C1.08434 2.28916 0.843374 2.77109 0.481928 3.49398C0.240965 4.09639 0.120482 4.81928 0 5.90362C0 6.98795 
-                          0 7.3494 0 10C0 12.7711 0 13.0121 0 14.0964C0 15.1807 0.240965 15.9036 0.481928 16.506C0.722892 17.1084 1.08434 
-                          17.7108 1.68675 18.3133C2.28916 18.9157 2.77109 19.1566 3.49398 19.5181C4.09639 19.759 4.81928 19.8795 5.90362 
-                          20C6.98795 20 7.3494 20 10 20C12.6506 20 13.0121 20 14.0964 20C15.1807 20 15.9036 19.759 16.506 19.5181C17.1084 
-                          19.2771 17.7108 18.9157 18.3133 18.3133C18.9157 17.7108 19.1566 17.2289 19.5181 16.506C19.759 15.9036 19.8795 
-                          15.1807 20 14.0964C20 13.0121 20 12.6506 20 10C20 7.3494 20 6.98795 20 5.90362C20 4.81928 19.759 4.09639 19.5181 
-                          3.49398C19.2771 2.89157 18.9157 2.28916 18.3133 1.68675C17.7108 1.08434 17.2289 0.843374 16.506 0.481928C15.9036
-                           0.240965 15.1807 0.120482 14.0964 0C13.0121 0 12.7711 0 10 0Z" fill="#949BB7"/>
-                        <path d="M10 4.81928C7.10843 4.81928 4.81928 7.10843 4.81928 10C4.81928 12.8916 7.10843 15.1807 10 15.1807C12.8916 
-                        15.1807 15.1807 12.8916 15.1807 10C15.1807 7.10843 12.8916 4.81928 10 4.81928ZM10 13.3735C8.19277 13.3735 6.62651 
-                        11.9277 6.62651 10C6.62651 8.19277 8.07229 6.62651 10 6.62651C11.8072 6.62651 13.3735 8.07229 13.3735 10C13.3735 11.8072 
-                        11.8072 13.3735 10 13.3735Z" fill="#949BB7"/>
-                        <path d="M15.3012 5.90362C15.9666 5.90362 16.506 5.3642 16.506 4.6988C16.506 4.03339 15.9666 3.49398 15.3012
-                         3.49398C14.6358 3.49398 14.0964 4.03339 14.0964 4.6988C14.0964 5.3642 14.6358 5.90362 15.3012 5.90362Z" fill="#949BB7"/>
+                    <path d="M10 1.80723C12.6506 1.80723 13.0121 1.80723 14.0964 1.80723C15.0602 1.80723 15.5422 2.04819 15.9036 
+                    2.16868C16.3855 2.40964 16.747 2.53012 17.1084 2.89157C17.4699 3.25301 17.7108 3.61446 17.8313 4.09639C17.9518 
+                    4.45783 18.0723 4.93976 18.1928 5.90362C18.1928 6.98795 18.1928 7.22892 18.1928 10C18.1928 12.7711 18.1928 13.0121 
+                    18.1928 14.0964C18.1928 15.0602 17.9518 15.5422 17.8313 15.9036C17.5904 16.3855 17.4699 16.747 17.1084 17.1084C16.747 
+                    17.4699 16.3855 17.7108 15.9036 17.8313C15.5422 17.9518 15.0602 18.0723 14.0964 18.1928C13.0121 18.1928 12.7711 18.1928 
+                    10 18.1928C7.22892 18.1928 6.98795 18.1928 5.90362 18.1928C4.93976 18.1928 4.45783 17.9518 4.09639 17.8313C3.61446 17.5904
+                    3.25301 17.4699 2.89157 17.1084C2.53012 16.747 2.28916 16.3855 2.16868 15.9036C2.04819 15.5422 1.92771 15.0602 1.80723 
+                    14.0964C1.80723 13.0121 1.80723 12.7711 1.80723 10C1.80723 7.22892 1.80723 6.98795 1.80723 5.90362C1.80723 4.93976 
+                    2.04819 4.45783 2.16868 4.09639C2.40964 3.61446 2.53012 3.25301 2.89157 2.89157C3.25301 2.53012 3.61446 2.28916 4.09639
+                    2.16868C4.45783 2.04819 4.93976 1.92771 5.90362 1.80723C6.98795 1.80723 7.3494 1.80723 10 1.80723ZM10 0C7.22892 
+                    0 6.98795 0 5.90362 0C4.81928 0 4.09639 0.240965 3.49398 0.481928C2.89157 0.722892 2.28916 1.08434 1.68675 
+                    1.68675C1.08434 2.28916 0.843374 2.77109 0.481928 3.49398C0.240965 4.09639 0.120482 4.81928 0 5.90362C0 6.98795 
+                    0 7.3494 0 10C0 12.7711 0 13.0121 0 14.0964C0 15.1807 0.240965 15.9036 0.481928 16.506C0.722892 17.1084 1.08434 
+                    17.7108 1.68675 18.3133C2.28916 18.9157 2.77109 19.1566 3.49398 19.5181C4.09639 19.759 4.81928 19.8795 5.90362 
+                    20C6.98795 20 7.3494 20 10 20C12.6506 20 13.0121 20 14.0964 20C15.1807 20 15.9036 19.759 16.506 19.5181C17.1084 
+                    19.2771 17.7108 18.9157 18.3133 18.3133C18.9157 17.7108 19.1566 17.2289 19.5181 16.506C19.759 15.9036 19.8795 
+                    15.1807 20 14.0964C20 13.0121 20 12.6506 20 10C20 7.3494 20 6.98795 20 5.90362C20 4.81928 19.759 4.09639 19.5181 
+                    3.49398C19.2771 2.89157 18.9157 2.28916 18.3133 1.68675C17.7108 1.08434 17.2289 0.843374 16.506 0.481928C15.9036
+                    0.240965 15.1807 0.120482 14.0964 0C13.0121 0 12.7711 0 10 0Z" fill="#949BB7"/>
+                    <path d="M10 4.81928C7.10843 4.81928 4.81928 7.10843 4.81928 10C4.81928 12.8916 7.10843 15.1807 10 15.1807C12.8916 
+                    15.1807 15.1807 12.8916 15.1807 10C15.1807 7.10843 12.8916 4.81928 10 4.81928ZM10 13.3735C8.19277 13.3735 6.62651 
+                    11.9277 6.62651 10C6.62651 8.19277 8.07229 6.62651 10 6.62651C11.8072 6.62651 13.3735 8.07229 13.3735 10C13.3735 11.8072 
+                    11.8072 13.3735 10 13.3735Z" fill="#949BB7"/>
+                    <path d="M15.3012 5.90362C15.9666 5.90362 16.506 5.3642 16.506 4.6988C16.506 4.03339 15.9666 3.49398 15.3012
+                    3.49398C14.6358 3.49398 14.0964 4.03339 14.0964 4.6988C14.0964 5.3642 14.6358 5.90362 15.3012 5.90362Z" fill="#949BB7"/>
                 </svg>                      
-            </div>
-            <div>
                 <svg id="face" width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.65708 12.3648H11.3793L11.9637 8.56055H7.65632V6.48134C7.65632 4.90099 8.16957 3.49962 9.63891
                     3.49962H12V0.179741C11.5852 0.123382 10.7078 0 9.04996 0C5.58819 0 3.55867 1.8393 3.55867 
                     6.0297V8.56055H0V12.3648H3.55867V22.821C4.26344 22.9276 4.97729 23 5.71007 23C6.37245 23 7.01893 22.9391 
                     7.65708 22.8522V12.3648Z" fill="#949BB7"/>
-                    </svg>                    
-            </div>
-            <div>
+                </svg>                    
                 <svg id="plane" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19 0.602225L15.9946 16.2923C15.9946 16.2923 15.5741 17.3801 14.4189 16.8584L7.48458 11.3526L7.45242 11.3364C8.38909 
                     10.4654 15.6524 3.70266 15.9698 3.39612C16.4613 2.92136 16.1562 2.63873 15.5856 2.99736L4.85679 
                     10.053L0.717638 8.61077C0.717638 8.61077 0.0662573 8.37083 0.00359284 7.84911C-0.0598962 7.32653 0.739076
                      7.0439 0.739076 7.0439L17.6131 0.188948C17.6131 0.188948 19 -0.44207 19 0.602225V0.602225Z" fill="#949BB7"/>
-                    </svg>                    
+                </svg>                    
             </div>
-            <div><p id="bigtext">Offices</p>
+            <div class="block-2">
+              <p id="bigtext">Offices</p>
               <p>United Statesof America 500 5th Avenue Suite 400, NY 10110</p>
               <p>United Kingdom High St, Bromley BR1 1DN</p>
               <p>France 80 avenue des Terroirs de France, Paris</p>
-            </div>
-        <div> 
+            </div> 
+            <div class="block-3">
             <p id="bigtext">For Quick Inquiries</p>
-             <input type="tel" id="tel" name="tel" value="+44 7911 123456"> <br/>
-             <input type="tel" id="tel" name="tel" value="+1-212-456-7890">
-        </div>
-        <div> 
-            <p>Join our newsletter!</p>
-            <input type="email" id="email" multiple>
-           <input id="button" type="checkbox" checked>
-        </div>
-            </section>
+                <svg id="uk" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.34375 0L9.96875 4.525L17.5625 0H20V1.55L12.5 6.025L20 10.475V12H17.5L10 7.525L2.53125 12H0V10.5L7.46875 6.05L0 1.6V0H2.34375Z" fill="white"/>
+                    <path d="M13.25 7.025L20 11V12L11.5312 7.025H13.25ZM7.5 7.525L7.6875 8.4L1.6875 12H0L7.5 7.525ZM20 0V0.075L12.2188 4.775L12.2812 3.675L18.4375 0H20ZM0 0L7.46875 4.4H5.59375L0 1.05V0Z" fill="#C8102E"/>
+                    <path d="M7.53125 0V12H12.5312V0H7.53125ZM0 4V8H20V4H0Z" fill="white"/>
+                    <path d="M0 4.825V7.225H20V4.825H0ZM8.53125 0V12H11.5312V0H8.53125Z" fill="#C8102E"/>
+                    </svg>                                                          
+             <p>+44 7911 123456
+             </p>
+             <p>+1-212-456-7890"
+             </p>
+            <label for="email">Join our newsletter!</label>
+            <input type="email" placeholder="Email" id="email" multiple>
+            </div>
+        </section>
     </footer>
   </body>
 </html>
