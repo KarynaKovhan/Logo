@@ -56,7 +56,7 @@
     <main> 
         <section>
             <h1>Contact us!</h1>
-        <div class="title">Need an experienced and skilled hand with custom IT projects?<br>
+        <div class="title">Need an experienced and skilled hand with custom IT projects?
              Fill out the form to get free consultation. 
         </div>
         </section>
@@ -85,18 +85,18 @@
             <label for="emaill">
                 Email*
             </label>
-            <input type="text" id="emaill" required> 
-            <div> 
+            <input type="text" id="emaill" required>  
                 <label id="label-text" for="file-input">
                     Upload Additional file
                 </label>
-            </div>
             <input id="file-input" type="file" name="file" multiple>
-            <p id="helpertext">File size of your documents should not exceed 10MB</p>
+            <span id="helpertext">
+                File size of your documents should not exceed 10MB
+            </span>
             <input id="submit" type="submit"  value="Submit">
-            <p id="helpertext"> <input id="button" type="radio" name="protect">
-                 I want to protect my data by signing an NDA 
-            </p>                               
+            <span id="helpertext"> <input id="button" type="radio" name="protect">
+                I want to protect my data by signing an NDA 
+            </span>                               
            <label for="select">
             Country of registration*
            </label> 
@@ -124,12 +124,12 @@
                         <circle cx="10" cy="10" r="10" fill="#FDFDFD"/>
                         <circle cx="189" cy="10" r="10" fill="#FDFDFD"/>
                     </svg>
-            <p id="helpertext"><input type="checkbox" id="button" name="data" value="yes" />
+           <div> <span id="helpertext"><input type="checkbox" id="button" name="data" value="yes" />
                 I want to protect my data by signing an NDA
-            </p>
-            <p id="helpertext"><input type="checkbox" id="button" checked name="data" value="no" />
+            </span> </div>
+            <span id="helpertext"><input type="checkbox" id="button" checked name="data" value="no" />
                 I have read and accept the Terms and Conditions
-            </p>
+            </span>
            </form> 
         </section>
    </main>
