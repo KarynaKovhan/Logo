@@ -2,30 +2,31 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <title> figma </title>
+  <title>figma</title>
   <link rel="stylesheet" href="../styles/index.css">
  </head>
     <body>
-    <header>
-       <nav>
-        <svg id="logo" width="72" height="36" viewBox="0 0 72 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.968 1.4H6.248V30.2H14.936V35H0.968V1.4ZM25.1 35.48C22.508 35.48 20.524 34.744 19.148 33.272C17.772 
-            31.8 17.084 29.72 17.084 27.032V9.368C17.084 6.68 17.772 4.6 19.148 3.128C20.524 1.656 22.508 0.919998 25.1 0.919998C27.692 
-            0.919998 29.676 1.656 31.052 3.128C32.428 4.6 33.116 6.68 33.116 9.368V27.032C33.116 29.72 32.428 31.8 31.052 33.272C29.676 
-            34.744 27.692 35.48 25.1 35.48ZM25.1 30.68C26.924 30.68 27.836 29.576 27.836 27.368V9.032C27.836 6.824 26.924 5.72 25.1 
-            5.72C23.276 5.72 22.364 6.824 22.364 9.032V27.368C22.364 29.576 23.276 30.68 25.1 30.68Z" fill="#EA51BC"/>
-            <path d="M44.1748 35.48C41.6148 35.48 39.6628 34.76 38.3188 33.32C36.9748 31.848 36.3027 29.752 36.3027 27.032V9.368C36.3027 
-            6.648 36.9748 4.568 38.3188 3.128C39.6628 1.656 41.6148 0.919998 44.1748 0.919998C46.7348 0.919998 48.6868 1.656 50.0308 
-            3.128C51.3748 4.568 52.0468 6.648 52.0468 9.368V12.248H47.0547V9.032C47.0547 6.824 46.1428 5.72 44.3188 5.72C42.4948 5.72 41.5828 
-            6.824 41.5828 9.032V27.416C41.5828 29.592 42.4948 30.68 44.3188 30.68C46.1428 30.68 47.0547 29.592 47.0547 
+    <header class="header-container">
+        <div class="header-item">
+          <svg width="72" height="36" viewBox="0 0 72 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.968 1.4H6.248V30.2H14.936V35H0.968V1.4ZM25.1 35.48C22.508 35.48 20.524 34.744 19.148 33.272C17.772 31.8 17.084 29.72 
+            17.084 27.032V9.368C17.084 6.68 17.772 4.6 19.148 3.128C20.524 1.656 22.508 0.919998 25.1 0.919998C27.692 0.919998 29.676 1.656 31.052 
+            3.128C32.428 4.6 33.116 6.68 33.116 9.368V27.032C33.116 29.72 32.428 31.8 31.052 33.272C29.676 34.744 27.692 35.48 25.1 35.48ZM25.1 
+            30.68C26.924 30.68 27.836 29.576 27.836 27.368V9.032C27.836 6.824 26.924 5.72 25.1 5.72C23.276 5.72 22.364 6.824 22.364 
+            9.032V27.368C22.364 29.576 23.276 30.68 25.1 30.68Z" fill="#EA51BC"/>
+            <path d="M44.1748 35.48C41.6148 35.48 39.6628 34.76 38.3188 33.32C36.9748 31.848 36.3027 29.752 36.3027 27.032V9.368C36.3027 6.648 
+            36.9748 4.568 38.3188 3.128C39.6628 1.656 41.6148 0.919998 44.1748 0.919998C46.7348 0.919998 48.6868 1.656 50.0308 3.128C51.3748 4.568 
+            52.0468 6.648 52.0468 9.368V12.248H47.0547V9.032C47.0547 6.824 46.1428 5.72 44.3188 5.72C42.4948 5.72 41.5828 6.824 41.5828 
+            9.032V27.416C41.5828 29.592 42.4948 30.68 44.3188 30.68C46.1428 30.68 47.0547 29.592 47.0547 
             27.416V20.84H44.4148V16.04H52.0468V27.032C52.0468 29.752 51.3748 31.848 50.0308 33.32C48.6868 34.76 46.7348 35.48 44.1748 
-            35.48ZM63.0688 35.48C60.4768 35.48 58.4928 34.744 57.1168 33.272C55.7408 31.8 55.0527 29.72 55.0527 27.032V9.368C55.0527 
-            6.68 55.7408 4.6 57.1168 3.128C58.4928 1.656 60.4768 0.919998 63.0688 0.919998C65.6608 0.919998 67.6448 1.656 69.0208 
-            3.128C70.3968 4.6 71.0848 6.68 71.0848 9.368V27.032C71.0848 29.72 70.3968 31.8 69.0208 33.272C67.6448 34.744 65.6608 35.48 
-            63.0688 35.48ZM63.0688 30.68C64.8928 30.68 65.8047 29.576 65.8047 27.368V9.032C65.8047 6.824 64.8928 5.72 63.0688 5.72C61.2448 
-            5.72 60.3328 6.824 60.3328 9.032V27.368C60.3328 29.576 61.2448 30.68 63.0688 30.68Z" fill="#FDFDFD"/>
-        </svg>
-        <div class="menu">
+            35.48ZM63.0688 35.48C60.4768 35.48 58.4928 34.744 57.1168 33.272C55.7408 31.8 55.0527 29.72 55.0527 27.032V9.368C55.0527 6.68 
+            55.7408 4.6 57.1168 3.128C58.4928 1.656 60.4768 0.919998 63.0688 0.919998C65.6608 0.919998 67.6448 1.656 69.0208 3.128C70.3968 
+            4.6 71.0848 6.68 71.0848 9.368V27.032C71.0848 29.72 70.3968 31.8 69.0208 33.272C67.6448 34.744 65.6608 35.48 63.0688 35.48ZM63.0688 
+            30.68C64.8928 30.68 65.8047 29.576 65.8047 27.368V9.032C65.8047 6.824 64.8928 5.72 63.0688 5.72C61.2448 5.72 60.3328 6.824 60.3328 
+            9.032V27.368C60.3328 29.576 61.2448 30.68 63.0688 30.68Z" fill="#FDFDFD"/>
+          </svg>            
+        </div>
+        <div class="header-item second-item-container">
            <ul>
             <li><a href="">Company</a></li>
             <li><a href="">Services</a></li>
@@ -35,41 +36,49 @@
             <li><a href="">Contact us</a></li>
            </ul>
         </div>
-        <svg id="lupa" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="header-item">
+        <div class="menu-item">
+          <svg  width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16.6665 14.6665H15.6132L15.2399 14.3065C16.8399 12.4399 17.6665 9.89319 17.2132 7.18652C16.5865 
             3.47986 13.4932 0.519858 9.75986 0.0665242C4.11986 -0.626809 -0.626809 4.11986 0.0665242 9.75986C0.519858 
             13.4932 3.47986 16.5865 7.18652 17.2132C9.89319 17.6665 12.4399 16.8399 14.3065 15.2399L14.6665 15.6132V16.6665L20.3332 
             22.3332C20.8799 22.8799 21.7732 22.8799 22.3199 22.3332C22.8665 21.7865 22.8665 20.8932 22.3199 20.3465L16.6665 14.6665ZM8.66652 
             14.6665C5.34652 14.6665 2.66652 11.9865 2.66652 8.66652C2.66652 5.34652 5.34652 2.66652 8.66652 2.66652C11.9865 2.66652 14.6665 
             5.34652 14.6665 8.66652C14.6665 11.9865 11.9865 14.6665 8.66652 14.6665Z" fill="#949BB7"/>
-            </svg>
-        <svg id="bell" width="22" height="27" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.72 20.0533L19 18.3333V11.6666C19 7.57325 16.8133 4.14659 13 3.23992V2.33325C13 1.22659 12.1067
-                 0.333252 11 0.333252C9.89333 0.333252 9 1.22659 9 2.33325V3.23992C5.17333 4.14659 3 7.55992 3 11.6666V18.3333L1.28 
-                 20.0533C0.44 20.8933 1.02667 22.3333 2.21333 22.3333H19.7733C20.9733 22.3333 21.56 20.8933 20.72 20.0533ZM16.3333 
-                 19.6666H5.66667V11.6666C5.66667 8.35992 7.68 5.66659 11 5.66659C14.32 5.66659 16.3333 8.35992 16.3333 11.6666V19.6666ZM11 
-                 26.3333C12.4667 26.3333 13.6667 25.1333 13.6667 23.6666H8.33333C8.33333 25.1333 9.52 26.3333 11 26.3333Z" fill="#949BB7"/>
-        </svg>
-        <img id="photo" src="../images/Avatar.png">    
-        </nav>
+          </svg>
+        </div>
+        <div class="menu-item">
+          <svg  width="22" height="27" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.72 20.0533L19 18.3333V11.6666C19 7.57325 16.8133 4.14659 13 3.23992V2.33325C13 1.22659 12.1067
+            0.333252 11 0.333252C9.89333 0.333252 9 1.22659 9 2.33325V3.23992C5.17333 4.14659 3 7.55992 3 11.6666V18.3333L1.28 
+            20.0533C0.44 20.8933 1.02667 22.3333 2.21333 22.3333H19.7733C20.9733 22.3333 21.56 20.8933 20.72 20.0533ZM16.3333 
+            19.6666H5.66667V11.6666C5.66667 8.35992 7.68 5.66659 11 5.66659C14.32 5.66659 16.3333 8.35992 16.3333 11.6666V19.6666ZM11 
+            26.3333C12.4667 26.3333 13.6667 25.1333 13.6667 23.6666H8.33333C8.33333 25.1333 9.52 26.3333 11 26.3333Z" fill="#949BB7"/>
+          </svg>
+        </div>
+        <div class="menu-item">
+        <img class="avatar" src="../images/Avatar.png"> 
+        </div>
     </header>
-    <main> 
-        <section>
+    <main>
+        <div class="main-container">
+        <div class="bigtitle">  
             <h1>Contact us!</h1>
+        </div>
         <div class="title">Need an experienced and skilled hand with custom IT projects?
              Fill out the form to get free consultation. 
         </div>
-        </section>
-        <section class="container">
-          <form>
+        </div>
+        <div class="input-container">
+            <form>
             <label for="companyname">
                 Your company name* 
             </label>
-            <input type="text" id="companyname" required>
+            <input type="text" id="companyname" minlength="0" maxlength="100" required>
             <label for="nature">
                  Nature of Business*
             </label>
-            <input type="text" id="nature" required> 
+            <input type="text" id="nature" minlength="0" maxlength="100" required> 
             <label for="date">
                 Data of registration
             </label>
@@ -77,15 +86,15 @@
             <label id="contactname">
                 Contact name
             </label>       
-            <input type="text" id="contractname" required> 
+            <input type="text" id="contractname"  minlength="0" maxlength="100" required> 
             <label for="contractphone">
                 Contact phone
             </label>
-            <input type="text" id="contractphone"  minlength="18" maxlength="18" required> 
+            <input type="number" id="contractphone" required> 
             <label for="emaill">
                 Email*
             </label>
-            <input type="text" id="emaill" required>  
+            <input type="email" id="emaill" minlength="0" maxlength="100" required>  
                 <label id="label-text" for="file-input">
                     Upload Additional file
                 </label>
@@ -94,7 +103,8 @@
                 File size of your documents should not exceed 10MB
             </span>
             <input id="submit" type="submit"  value="Submit">
-            <span id="helpertext"> <input id="button" type="radio" name="protect">
+            <input class="button" type="radio" name="protect">
+            <span id="helpertext">
                 I want to protect my data by signing an NDA 
             </span>                               
            <label for="select">
@@ -109,38 +119,37 @@
             <label for="adress">
                 Address
             </label>
-            <input type="text" id="adress" required>      
+            <input type="text" id="adress" minlength="0" maxlength="100" required>      
                 <label for="postcode">
                     Postcode
                 </label>
-                <input type="text" id="postcode" required> 
+                <input type="number" id="postcode" required> 
                 <label for="textarea">
                     Lets’s talk about your idea
                 </label> 
-                <textarea id="textarea" name="text"></textarea>
+                <textarea id="textarea" name="text" maxlength="320" minlength="0" required></textarea>
                     <svg width="392" height="20" viewBox="0 0 392 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="8" width="392" height="4" rx="2" fill="#949BB7"/>
                         <rect y="8" width="199" height="4" rx="2" fill="#EA51BC"/>
                         <circle cx="10" cy="10" r="10" fill="#FDFDFD"/>
                         <circle cx="189" cy="10" r="10" fill="#FDFDFD"/>
                     </svg>
-           <div> <span id="helpertext"><input type="checkbox" id="button" name="data" value="yes" />
-                I want to protect my data by signing an NDA
-            </span> </div>
-            <span id="helpertext"><input type="checkbox" id="button" checked name="data" value="no" />
-                I have read and accept the Terms and Conditions
-            </span>
+                    <input type="checkbox" class="button" name="data" value="yes" />
+                    <span id="helpertext">
+                        I want to protect my data by signing an NDA
+                    </span> 
+                    <input type="checkbox" class="button" checked name="data" value="no" />
+                    <span id="helpertext">
+                        I have read and accept the Terms and Conditions
+                    </span>
            </form> 
-        </section>
+        </div>
    </main>
-    <footer> 
-        <section class="container2">
-            <div class="block-1">
+    <footer class="header-item second-item-container">
+            <div class="block">
             <p id="bigtext">Career</p>
-            <p>If you are interested in working at Logo send us your CV to careers@logo.com
-                 and we can talk
-            </p> 
-            </div>
+            If you are interested in working at Logo send us your CV to <p class="emaillink">careers@logo.com</p> and we can talk
+            <div class="footer-item">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 1.80723C12.6506 1.80723 13.0121 1.80723 14.0964 1.80723C15.0602 1.80723 15.5422 2.04819 15.9036 
                     2.16868C16.3855 2.40964 16.747 2.53012 17.1084 2.89157C17.4699 3.25301 17.7108 3.61446 17.8313 4.09639C17.9518 
@@ -168,26 +177,27 @@
                     <path d="M15.3012 5.90362C15.9666 5.90362 16.506 5.3642 16.506 4.6988C16.506 4.03339 15.9666 3.49398 15.3012
                     3.49398C14.6358 3.49398 14.0964 4.03339 14.0964 4.6988C14.0964 5.3642 14.6358 5.90362 15.3012 5.90362Z" fill="#949BB7"/>
                 </svg>                      
-                <svg id="face" width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.65708 12.3648H11.3793L11.9637 8.56055H7.65632V6.48134C7.65632 4.90099 8.16957 3.49962 9.63891
                     3.49962H12V0.179741C11.5852 0.123382 10.7078 0 9.04996 0C5.58819 0 3.55867 1.8393 3.55867 
                     6.0297V8.56055H0V12.3648H3.55867V22.821C4.26344 22.9276 4.97729 23 5.71007 23C6.37245 23 7.01893 22.9391 
                     7.65708 22.8522V12.3648Z" fill="#949BB7"/>
                 </svg>                    
-                <svg id="plane" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19 0.602225L15.9946 16.2923C15.9946 16.2923 15.5741 17.3801 14.4189 16.8584L7.48458 11.3526L7.45242 11.3364C8.38909 
                     10.4654 15.6524 3.70266 15.9698 3.39612C16.4613 2.92136 16.1562 2.63873 15.5856 2.99736L4.85679 
                     10.053L0.717638 8.61077C0.717638 8.61077 0.0662573 8.37083 0.00359284 7.84911C-0.0598962 7.32653 0.739076
                      7.0439 0.739076 7.0439L17.6131 0.188948C17.6131 0.188948 19 -0.44207 19 0.602225V0.602225Z" fill="#949BB7"/>
                 </svg>                    
             </div>
-            <div class="block-2">
+            </div>
+            <div class="block">
               <p id="bigtext">Offices</p>
               <p>United Statesof America 500 5th Avenue Suite 400, NY 10110</p>
               <p>United Kingdom High St, Bromley BR1 1DN</p>
               <p>France 80 avenue des Terroirs de France, Paris</p>
             </div> 
-            <div class="block-3">
+            <div class="block">
             <p id="bigtext">For Quick Inquiries</p>
                 <svg id="uk" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.34375 0L9.96875 4.525L17.5625 0H20V1.55L12.5 6.025L20 10.475V12H17.5L10 7.525L2.53125 12H0V10.5L7.46875 6.05L0 1.6V0H2.34375Z" fill="white"/>
@@ -197,12 +207,11 @@
                     </svg>                                                          
              <p>+44 7911 123456
              </p>
-             <p>+1-212-456-7890"
+             <p>+1-212-456-7890
              </p>
             <label for="email">Join our newsletter!</label>
             <input type="email" placeholder="Email" id="email" multiple>
             </div>
-        </section>
     </footer>
   </body>
 </html>
