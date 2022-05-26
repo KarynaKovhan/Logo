@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>figma</title>
-  <link rel="stylesheet" href="../styles/index.css">
- </head>
+    <head>
+      <meta charset="utf-8">
+      <title>figma</title>
+      <link rel="stylesheet" href="../styles/index.css">
+      <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Barlow&family=Karma:wght@500&family=Open+Sans&display=swap"rel="stylesheet">
+    </head> 
     <body>
-    <header class="header-container">
+      <header class="header-container">
         <div class="header-item">
           <svg width="72" height="36" viewBox="0 0 72 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.968 1.4H6.248V30.2H14.936V35H0.968V1.4ZM25.1 35.48C22.508 35.48 20.524 34.744 19.148 33.272C17.772 31.8 17.084 29.72 
@@ -59,124 +60,140 @@
         <div class="menu-item">
         <img class="avatar" src="../images/Avatar.png"> 
         </div>
-    </header>
+      </header>
     <main>
-        <div class="main-container">
-        <div class="bigtitle">  
-            <h1>Contact us!</h1>
+        <div  class="information">
+            <div class="bigtitle">
+              <h1>Contact us</h1>
+            </div>
+            <div class="title">Need an experienced and skilled hand with custom IT projects? Fill out the form to get free consultation.</div>
         </div>
-        <div class="title">Need an experienced and skilled hand with custom IT projects?
-             Fill out the form to get free consultation. 
+    <form>
+        <div class="first-container">
+           <div class="first-column">
+                <div>
+                    <label for="companyname">Your company name*</label>
+                    <input type="text" id="companyname" minlength="0" maxlength="100" required>
+                </div>
+                <div>
+                    <label for="nature">Nature of Business*</label>
+                    <input type="text" id="nature" minlength="0" maxlength="100" required> 
+                </div>
+                <div>
+                    <label for="date">Data of registration</label>
+                    <input type="date" id="date" name="expiration" required> 
+                </div>  
+            </div>
+            <div class="second-column">
+                <div>
+                    <label for="select">Country of registration*</label> 
+                    <input type="search" id="select"  placeholder="Select" required> 
+                      <svg id="selectsvg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.88 0.790059L6 4.67006L2.12 0.790059C1.73 0.400059 1.1 0.400059 0.710003 0.790059C0.320003 1.18006
+                       0.320003 1.81006 0.710003 2.20006L5.3 6.79006C5.69 7.18006 6.32 7.18006 6.71 6.79006L11.3 2.20006C11.69 1.81006 
+                       11.69 1.18006 11.3 0.790059C10.91 0.410059 10.27 0.400059 9.88 0.790059Z" fill="#FDFDFD"/>
+                      </svg>
+                </div>
+                <div>
+                    <label for="adress">Address</label>
+                    <input type="text" id="adress" minlength="0" maxlength="100" required>
+                </div>
+                <div>     
+                    <label for="postcode">Postcode</label>
+                    <input type="number" id="postcode" required>
+                </div>
+            </div>
         </div>
+        <div class="divider"> 
+        </div>           
+        <div class="second-container">
+            <div class="first-column">
+                <div>
+                    <label id="contactname">Contact name</label>       
+                    <input type="text" id="contractname"  minlength="0" maxlength="100" required> 
+                </div>
+                <div>
+                    <label for="contractphone">Contact phone</label>
+                    <input type="number" id="contractphone" required>
+                </div> 
+                <div>
+                    <label for="emaill">Email*</label>
+                    <input type="email" id="emaill" minlength="0" maxlength="100" required> 
+                 </div>
+            </div>
+            <div class="second-column">
+                <div>
+                    <label for="textarea">Lets’s talk about your idea</label> 
+                    <textarea id="textarea" name="text" maxlength="320" minlength="0" required></textarea>
+                </div>
+                <div>
+                <svg class="slider" width="392" height="20" viewBox="0 0 392 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="8" width="392" height="4" rx="2" fill="#949BB7"/>
+                    <rect y="8" width="199" height="4" rx="2" fill="#EA51BC"/>
+                    <circle cx="10" cy="10" r="10" fill="#FDFDFD"/>
+                    <circle cx="189" cy="10" r="10" fill="#FDFDFD"/>
+                </svg>
+                </div>
+                <div class="dividers">
+                    <div><img src="../images/Divider-2.png"></div>
+                    <div><img src="../images/Divider.png"></div>
+                    <div><img src="../images/Divider.png"></div>
+                    <div><img src="../images/Divider.png"></div>
+                    <div><img src="../images/Divider.png"></div>
+                    <div><img src="../images/Divider-2.png"></div>
+                    <div><img src="../images/Divider.png"></div>
+                    <div><img src="../images/Divider.png"></div>
+                    <div><img src="../images/Divider.png"></div>
+                    <div><img src="../images/Divider.png"></div>
+                    <div><img src="../images/Divider-2.png"></div>
+                </div>
+            </div>
         </div>
-        <div class="input-container">
-            <form>
-            <label for="companyname">
-                Your company name* 
-            </label>
-            <input type="text" id="companyname" minlength="0" maxlength="100" required>
-            <label for="nature">
-                 Nature of Business*
-            </label>
-            <input type="text" id="nature" minlength="0" maxlength="100" required> 
-            <label for="date">
-                Data of registration
-            </label>
-            <input type="date" id="date" name="expiration" required>   
-            <label id="contactname">
-                Contact name
-            </label>       
-            <input type="text" id="contractname"  minlength="0" maxlength="100" required> 
-            <label for="contractphone">
-                Contact phone
-            </label>
-            <input type="number" id="contractphone" required> 
-            <label for="emaill">
-                Email*
-            </label>
-            <input type="email" id="emaill" minlength="0" maxlength="100" required>  
-                <label id="label-text" for="file-input">
-                    Upload Additional file
-                </label>
-            <input id="file-input" type="file" name="file" multiple>
-            <span id="helpertext">
-                File size of your documents should not exceed 10MB
-            </span>
-            <input id="submit" type="submit"  value="Submit">
-            <input class="button" type="radio" name="protect">
-            <span id="helpertext">
-                I want to protect my data by signing an NDA 
-            </span>                               
-           <label for="select">
-            Country of registration*
-           </label> 
-            <input type="search" id="select"  placeholder="Select" required>   
-            <svg id="selectsvg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.88 0.790059L6 4.67006L2.12 0.790059C1.73 0.400059 1.1 0.400059 0.710003 0.790059C0.320003 1.18006
-                 0.320003 1.81006 0.710003 2.20006L5.3 6.79006C5.69 7.18006 6.32 7.18006 6.71 6.79006L11.3 2.20006C11.69 1.81006 
-                 11.69 1.18006 11.3 0.790059C10.91 0.410059 10.27 0.400059 9.88 0.790059Z" fill="#FDFDFD"/>
-            </svg>
-            <label for="adress">
-                Address
-            </label>
-            <input type="text" id="adress" minlength="0" maxlength="100" required>      
-                <label for="postcode">
-                    Postcode
-                </label>
-                <input type="number" id="postcode" required> 
-                <label for="textarea">
-                    Lets’s talk about your idea
-                </label> 
-                <textarea id="textarea" name="text" maxlength="320" minlength="0" required></textarea>
-                    <svg width="392" height="20" viewBox="0 0 392 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="8" width="392" height="4" rx="2" fill="#949BB7"/>
-                        <rect y="8" width="199" height="4" rx="2" fill="#EA51BC"/>
-                        <circle cx="10" cy="10" r="10" fill="#FDFDFD"/>
-                        <circle cx="189" cy="10" r="10" fill="#FDFDFD"/>
-                    </svg>
-                    <input type="checkbox" class="button" name="data" value="yes" />
-                    <span id="helpertext">
-                        I want to protect my data by signing an NDA
-                    </span> 
+        <div class="divider"> 
+        </div>
+        <div class="third-container">
+            <div class="first-column">
+                <div>
+                    <label id="label-text" for="file-input">Upload Additional file</label>
+                    <input id="file-input" type="file" name="file" multiple>
+                </div>
+                <div>
+                    <span id="helpertext">File size of your documents should not exceed 10MB</span>
+                </div>
+                <div>
+                    <input id="submit" type="submit"  value="Submit">
+                </div>
+                <div class="radio">
+                    <input class="button" type="radio" name="protect">
+                    <span id="helpertext">I want to protect my data by signing an NDA</span>   
+                 </div>
+            </div>
+            <div class="second-column">
+                <div>  
+                    <input type="checkbox" class="button" name="data" value="no" />       
+                    <span id="helpertext">I want to protect my data by signing an NDA</span> 
+                </div>
+                <div>
                     <input type="checkbox" class="button" checked name="data" value="no" />
-                    <span id="helpertext">
-                        I have read and accept the Terms and Conditions
-                    </span>
-           </form> 
+                    <span id="helpertext">I have read and accept the Terms and Conditions</span> 
+                </div>
+            </div>
         </div>
-   </main>
-    <footer class="header-item second-item-container">
-            <div class="block">
-            <p id="bigtext">Career</p>
+    </form>
+    </main>
+    <footer>
+        <div class="block">
+            <div>
+              <p id="bigtext">Career</p>
+            </div>
+            <div>
             If you are interested in working at Logo send us your CV to <p class="emaillink">careers@logo.com</p> and we can talk
             <div class="footer-item">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 1.80723C12.6506 1.80723 13.0121 1.80723 14.0964 1.80723C15.0602 1.80723 15.5422 2.04819 15.9036 
-                    2.16868C16.3855 2.40964 16.747 2.53012 17.1084 2.89157C17.4699 3.25301 17.7108 3.61446 17.8313 4.09639C17.9518 
-                    4.45783 18.0723 4.93976 18.1928 5.90362C18.1928 6.98795 18.1928 7.22892 18.1928 10C18.1928 12.7711 18.1928 13.0121 
-                    18.1928 14.0964C18.1928 15.0602 17.9518 15.5422 17.8313 15.9036C17.5904 16.3855 17.4699 16.747 17.1084 17.1084C16.747 
-                    17.4699 16.3855 17.7108 15.9036 17.8313C15.5422 17.9518 15.0602 18.0723 14.0964 18.1928C13.0121 18.1928 12.7711 18.1928 
-                    10 18.1928C7.22892 18.1928 6.98795 18.1928 5.90362 18.1928C4.93976 18.1928 4.45783 17.9518 4.09639 17.8313C3.61446 17.5904
-                    3.25301 17.4699 2.89157 17.1084C2.53012 16.747 2.28916 16.3855 2.16868 15.9036C2.04819 15.5422 1.92771 15.0602 1.80723 
-                    14.0964C1.80723 13.0121 1.80723 12.7711 1.80723 10C1.80723 7.22892 1.80723 6.98795 1.80723 5.90362C1.80723 4.93976 
-                    2.04819 4.45783 2.16868 4.09639C2.40964 3.61446 2.53012 3.25301 2.89157 2.89157C3.25301 2.53012 3.61446 2.28916 4.09639
-                    2.16868C4.45783 2.04819 4.93976 1.92771 5.90362 1.80723C6.98795 1.80723 7.3494 1.80723 10 1.80723ZM10 0C7.22892 
-                    0 6.98795 0 5.90362 0C4.81928 0 4.09639 0.240965 3.49398 0.481928C2.89157 0.722892 2.28916 1.08434 1.68675 
-                    1.68675C1.08434 2.28916 0.843374 2.77109 0.481928 3.49398C0.240965 4.09639 0.120482 4.81928 0 5.90362C0 6.98795 
-                    0 7.3494 0 10C0 12.7711 0 13.0121 0 14.0964C0 15.1807 0.240965 15.9036 0.481928 16.506C0.722892 17.1084 1.08434 
-                    17.7108 1.68675 18.3133C2.28916 18.9157 2.77109 19.1566 3.49398 19.5181C4.09639 19.759 4.81928 19.8795 5.90362 
-                    20C6.98795 20 7.3494 20 10 20C12.6506 20 13.0121 20 14.0964 20C15.1807 20 15.9036 19.759 16.506 19.5181C17.1084 
-                    19.2771 17.7108 18.9157 18.3133 18.3133C18.9157 17.7108 19.1566 17.2289 19.5181 16.506C19.759 15.9036 19.8795 
-                    15.1807 20 14.0964C20 13.0121 20 12.6506 20 10C20 7.3494 20 6.98795 20 5.90362C20 4.81928 19.759 4.09639 19.5181 
-                    3.49398C19.2771 2.89157 18.9157 2.28916 18.3133 1.68675C17.7108 1.08434 17.2289 0.843374 16.506 0.481928C15.9036
-                    0.240965 15.1807 0.120482 14.0964 0C13.0121 0 12.7711 0 10 0Z" fill="#949BB7"/>
-                    <path d="M10 4.81928C7.10843 4.81928 4.81928 7.10843 4.81928 10C4.81928 12.8916 7.10843 15.1807 10 15.1807C12.8916 
-                    15.1807 15.1807 12.8916 15.1807 10C15.1807 7.10843 12.8916 4.81928 10 4.81928ZM10 13.3735C8.19277 13.3735 6.62651 
-                    11.9277 6.62651 10C6.62651 8.19277 8.07229 6.62651 10 6.62651C11.8072 6.62651 13.3735 8.07229 13.3735 10C13.3735 11.8072 
-                    11.8072 13.3735 10 13.3735Z" fill="#949BB7"/>
-                    <path d="M15.3012 5.90362C15.9666 5.90362 16.506 5.3642 16.506 4.6988C16.506 4.03339 15.9666 3.49398 15.3012
-                    3.49398C14.6358 3.49398 14.0964 4.03339 14.0964 4.6988C14.0964 5.3642 14.6358 5.90362 15.3012 5.90362Z" fill="#949BB7"/>
-                </svg>                      
+                    <path d="M10 1.80723C12.6506 1.80723 13.0121 1.80723 14.0964 1.80723C15.0602 1.80723 15.5422 2.04819 15.9036 2.16868C16.3855 2.40964 16.747 2.53012 17.1084 2.89157C17.4699 3.25301 17.7108 3.61446 17.8313 4.09639C17.9518 4.45783 18.0723 4.93976 18.1928 5.90362C18.1928 6.98795 18.1928 7.22892 18.1928 10C18.1928 12.7711 18.1928 13.0121 18.1928 14.0964C18.1928 15.0602 17.9518 15.5422 17.8313 15.9036C17.5904 16.3855 17.4699 16.747 17.1084 17.1084C16.747 17.4699 16.3855 17.7108 15.9036 17.8313C15.5422 17.9518 15.0602 18.0723 14.0964 18.1928C13.0121 18.1928 12.7711 18.1928 10 18.1928C7.22892 18.1928 6.98795 18.1928 5.90362 18.1928C4.93976 18.1928 4.45783 17.9518 4.09639 17.8313C3.61446 17.5904 3.25301 17.4699 2.89157 17.1084C2.53012 16.747 2.28916 16.3855 2.16868 15.9036C2.04819 15.5422 1.92771 15.0602 1.80723 14.0964C1.80723 13.0121 1.80723 12.7711 1.80723 10C1.80723 7.22892 1.80723 6.98795 1.80723 5.90362C1.80723 4.93976 2.04819 4.45783 2.16868 4.09639C2.40964 3.61446 2.53012 3.25301 2.89157 2.89157C3.25301 2.53012 3.61446 2.28916 4.09639 2.16868C4.45783 2.04819 4.93976 1.92771 5.90362 1.80723C6.98795 1.80723 7.3494 1.80723 10 1.80723ZM10 0C7.22892 0 6.98795 0 5.90362 0C4.81928 0 4.09639 0.240965 3.49398 0.481928C2.89157 0.722892 2.28916 1.08434 1.68675 1.68675C1.08434 2.28916 0.843374 2.77109 0.481928 3.49398C0.240965 4.09639 0.120482 4.81928 0 5.90362C0 6.98795 0 7.3494 0 10C0 12.7711 0 13.0121 0 14.0964C0 15.1807 0.240965 15.9036 0.481928 16.506C0.722892 17.1084 1.08434 17.7108 1.68675 18.3133C2.28916 18.9157 2.77109 19.1566 3.49398 19.5181C4.09639 19.759 4.81928 19.8795 5.90362 20C6.98795 20 7.3494 20 10 20C12.6506 20 13.0121 20 14.0964 20C15.1807 20 15.9036 19.759 16.506 19.5181C17.1084 19.2771 17.7108 18.9157 18.3133 18.3133C18.9157 17.7108 19.1566 17.2289 19.5181 16.506C19.759 15.9036 19.8795 15.1807 20 14.0964C20 13.0121 20 12.6506 20 10C20 7.3494 20 6.98795 20 5.90362C20 4.81928 19.759 4.09639 19.5181 3.49398C19.2771 2.89157 18.9157 2.28916 18.3133 1.68675C17.7108 1.08434 17.2289 0.843374 16.506 0.481928C15.9036 0.240965 15.1807 0.120482 14.0964 0C13.0121 0 12.7711 0 10 0Z" fill="#949BB7"/>
+                    <path d="M10 4.81928C7.10843 4.81928 4.81928 7.10843 4.81928 10C4.81928 12.8916 7.10843 15.1807 10 15.1807C12.8916 15.1807 15.1807 12.8916 15.1807 10C15.1807 7.10843 12.8916 4.81928 10 4.81928ZM10 13.3735C8.19277 13.3735 6.62651 11.9277 6.62651 10C6.62651 8.19277 8.07229 6.62651 10 6.62651C11.8072 6.62651 13.3735 8.07229 13.3735 10C13.3735 11.8072 11.8072 13.3735 10 13.3735Z" fill="#949BB7"/>
+                    <path d="M15.3012 5.90362C15.9666 5.90362 16.506 5.3642 16.506 4.6988C16.506 4.03339 15.9666 3.49398 15.3012 3.49398C14.6358 3.49398 14.0964 4.03339 14.0964 4.6988C14.0964 5.3642 14.6358 5.90362 15.3012 5.90362Z" fill="#949BB7"/>
+                </svg>              
                 <svg width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.65708 12.3648H11.3793L11.9637 8.56055H7.65632V6.48134C7.65632 4.90099 8.16957 3.49962 9.63891
                     3.49962H12V0.179741C11.5852 0.123382 10.7078 0 9.04996 0C5.58819 0 3.55867 1.8393 3.55867 
@@ -191,27 +208,38 @@
                 </svg>                    
             </div>
             </div>
-            <div class="block">
+        </div>
+        <div class="block">
+            <div>
               <p id="bigtext">Offices</p>
+            </div>
+            <div>
               <p>United Statesof America 500 5th Avenue Suite 400, NY 10110</p>
               <p>United Kingdom High St, Bromley BR1 1DN</p>
               <p>France 80 avenue des Terroirs de France, Paris</p>
-            </div> 
-            <div class="block">
-            <p id="bigtext">For Quick Inquiries</p>
-                <svg id="uk" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </div>
+        </div> 
+        <div class="block">
+            <div>
+                <p id="bigtext">For Quick Inquiries</p>
+            </div>  
+            <div> 
+                <div class="flag"> 
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.34375 0L9.96875 4.525L17.5625 0H20V1.55L12.5 6.025L20 10.475V12H17.5L10 7.525L2.53125 12H0V10.5L7.46875 6.05L0 1.6V0H2.34375Z" fill="white"/>
                     <path d="M13.25 7.025L20 11V12L11.5312 7.025H13.25ZM7.5 7.525L7.6875 8.4L1.6875 12H0L7.5 7.525ZM20 0V0.075L12.2188 4.775L12.2812 3.675L18.4375 0H20ZM0 0L7.46875 4.4H5.59375L0 1.05V0Z" fill="#C8102E"/>
                     <path d="M7.53125 0V12H12.5312V0H7.53125ZM0 4V8H20V4H0Z" fill="white"/>
                     <path d="M0 4.825V7.225H20V4.825H0ZM8.53125 0V12H11.5312V0H8.53125Z" fill="#C8102E"/>
-                    </svg>                                                          
-             <p>+44 7911 123456
-             </p>
-             <p>+1-212-456-7890
-             </p>
-            <label for="email">Join our newsletter!</label>
-            <input type="email" placeholder="Email" id="email" multiple>
+                    </svg>                                                    
+                    <p>+44 7911 123456
+                    </p>
+                </div>
+                <p>+1-212-456-7890
+                </p>
+                <label for="email">Join our newsletter!</label>
+                <input type="email" placeholder="Email" id="email" multiple>
             </div>
+        </div>
     </footer>
-  </body>
+    </body>
 </html>
