@@ -72,7 +72,7 @@ label {
   font-weight: 600;
 }
 
-input, textarea {
+input, textarea{
   color: #ffe;
   width: 392px;
   height: 49px;
@@ -81,15 +81,41 @@ input, textarea {
   border-radius: 12px;
   margin: 12px 0px;
 }
-#select {
-  
-  color: #ffe;
+
+  .custom-select_option{
+    color: #7e817f;
+    filter: hue-rotate(125deg);
+    font-size: 14px!important;
+    padding: 10px;
+  }
+    #my-select {
+
+      color: #ffe;
   width: 392px;
   height: 49px;
   background: #111217;
   border: 1px solid #949bb7;
   border-radius: 12px;
   margin: 12px 0px;
+    }
+     
+.form-group__house__house {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 23px;
+}
+.custom-select {
+  flex-basis: 100%;
+  padding: 10px;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 2px solid #E1E1E1;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
 }
 
 footer {
