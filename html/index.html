@@ -78,31 +78,34 @@
                         <label for="date">Data of registration</label>
                         <input type="date" id="date" class="date-input" name="expiration" required>
                     </div>
-                    <div class="column">
+                    <div class="column form-group">
                         <label for="select">Country of registration*</label>
-                        <input type="search" placeholder="Select" required>
-                        <svg id="selectsvg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.88 0.790059L6 4.67006L2.12 0.790059C1.73 0.400059 1.1 0.400059 0.710003 0.790059C0.320003 1.18006
-                                                                      0.320003 1.81006 0.710003 2.20006L5.3 6.79006C5.69 7.18006 6.32 7.18006 6.71 6.79006L11.3 2.20006C11.69 1.81006 
-                                                                      11.69 1.18006 11.3 0.790059C10.91 0.410059 10.27 0.400059 9.88 0.790059Z"
-                                fill="#FDFDFD" />
-                        </svg>
+                        <select id="select" value="Selection" class="custom-select">
+                            <optgroup label="--Select--"></optgroup>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                            <option value="5">Option 05</option>
+                            <option value="6">Option 06</option>
+                            <option value="7">Option 07</option>
+                        </select>
                         <label for="adress">Address</label>
                         <input type="text" id="adress" minlength="0" maxlength="100" required>
                         <label for="postcode">Postcode</label>
                         <input type="number" id="postcode" required>
+                      
+                      </div>
                     </div>
-                </div>
                 <div class="divider"></div>
                 <div class="container">
                     <div class="column">
                         <label id="contactname">Contact name</label>
                         <input type="text" id="contractname" minlength="0" maxlength="100" required>
                         <label for="contractphone">Contact phone</label>
-                        <input type="number" id="contractphone" required>
+                        <input type="tel" id="contractphone" required>
                         <label for="email">Email*</label>
-                        <input type="email" id="email" minlength="0" maxlength="100" required>
+                        <input type="email" id="email" required pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" />
                     </div>
                     <div class="column">
                         <label for="textarea">Lets’s talk about your idea</label>
@@ -198,7 +201,13 @@
                     <p>+1-212-456-7890</p>
                 </div>
                 <label for="email">Join our newsletter!</label>
-                <input type="email" placeholder="Email" id="email" class="email-footer" multiple>
+                <div class="footer-items">
+                  <input type="email" placeholder="Email" id="email" class="email-footer" multiple>
+                  <label>
+                    <input type='checkbox' class="check" checked>
+                    <span></span>
+                  </label>
+                </div>
             </div>
         </div>
     </footer>

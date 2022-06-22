@@ -31,7 +31,9 @@ a {
   color: #949BB7;
   text-decoration: none;
 }
-
+ a:hover {
+  color: #ffe;
+ }
 a:focus {
   color: #fff;
 }
@@ -79,10 +81,20 @@ input, textarea {
   border-radius: 12px;
   margin: 12px 0px;
 }
+#select {
+  
+  color: #ffe;
+  width: 392px;
+  height: 49px;
+  background: #111217;
+  border: 1px solid #949bb7;
+  border-radius: 12px;
+  margin: 12px 0px;
+}
 
 footer {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
   background: #151a30;
 }
 
@@ -150,17 +162,51 @@ border: 1px solid #949BB7;
 
 .email-footer {
   background-color: #151a30;
+  width: 80%;
+  height: 30px;
 }
-
+.footer-item {
+  width: fit-content;
+}
 .footer-item > svg {
   margin-right: 24px;
 }
+
+.footer-items {
+display: flex;
+gap: 10px;
+align-items: center;
+width: fit-content;
+}
+
+label input {
+  display: none;
+}
+
+label span { 
+  border: 1px solid gray;
+  display: inline-block;
+  position: relative;
+width: 38px;
+height: 38px;
+background: linear-gradient(136.51deg, #7B20B5 0%, #EA51BC 94.14%);
+border-radius: 8px;
+}
+.check:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  left: 10px;
+  font-size:23px;
+  color:whitesmoke;
+}
+
 
 .block {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 40px;
+  width: 15%;
 }
   
 .date-input {
@@ -212,11 +258,17 @@ top: -47px;
   font-size: 24px;
 }
 
+.submit-button:hover{
+ background: #7B20B5;
+  display: block;
+}
+
 .bigtext {
     font-weight: 800;
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 1px;
+    width: fit-content;
 }
   
 .dividers {
@@ -245,10 +297,6 @@ input[type="file"] {
   display: none;
 }
 
-/* input:valid {
-  border-color: green;
-} */
-
 .button {
   accent-color: #EA51BC;
   background: #151a30;
@@ -257,5 +305,5 @@ input[type="file"] {
 }
 
 .first-block {
-  margin: 60px 0;
+  width: 133%;
 }
