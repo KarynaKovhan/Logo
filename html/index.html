@@ -75,35 +75,46 @@
                         <input type="text" id="companyname" minlength="0" maxlength="100" required>
                         <label for="nature">Nature of Business*</label>
                         <input type="text" id="nature" minlength="0" maxlength="100" required>
-                        <label for="date">Data of registration</label>
-                        <input type="date" id="date" class="date-input" name="expiration" required>
+                        <label for="date" min="1997-01-01" max="2030-12-31">Data of registration</label>
+                        <input type="text" id="date" class="date-input" placeholder="MM/DD/YYYY" onfocus="(this.type='date')">
+                            <svg id="calendar" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 2H18C19.1 2 20 2.9 20 4V20C20 21.1 19.1 22 18 22H2C0.9 22 0 21.1 0 20V4C0 2.9 0.9 2 2 2H3V1C3 0.45 3.45 0 4 0C4.55 0 5 0.45 5 1V2H15V1C15 0.45 15.45 0 16 0C16.55 0 17 0.45 17 1V2ZM3 20H17C17.55 20 18 19.55 18 19V7H2V19C2 19.55 2.45 20 3 20Z" fill="#FDFDFD"/>
+                            </svg>
                     </div>
                     <div class="column">
-
-
                         <div class="form-group">
                             <div class="form-group__house">
                               <label for="my-select">Country of registration*</label>
-                              <div>
-                              <select id="my-select" class="custom-select">
-                                <optgroup label="-- select --">
-                                <option class="custom-select_option" value="1">Option 01</option>
-                                <option class="custom-select_option" value="2">Option 02</option>
-                                <option class="custom-select_option" value="3">Option 03</option>
-                                <option class="custom-select_option" value="4">Option 04</option>
-                                <option class="custom-select_option" value="5">Option 05</option>
-                                <option class="custom-select_option" value="6">Option 06</option>
-                                <option class="custom-select_option" value="7">Option 07</option>
-                                </optgroup>
-                              </select>
+                                <div class="select is-active">
+                                  <div class="select__header">
+                                    <span class="select__current">Search</span>
+                                      <div class="select__icon">&times;</div>
+                                  </div>
+                                  <div class="select__body">
+                                    <div class="search-box">
+                                        <div>
+                                          <input type="text" placeholder="Search" />
+                                            <svg id="searchsvg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.4999 10.9999H11.7099L11.4299 10.7299C12.6299 9.32989 13.2499 7.41989 12.9099 5.38989C12.4399 2.60989 10.1199 0.389893 7.31989 0.0498932C3.08989 -0.470107 -0.470107 3.08989 0.0498932 7.31989C0.389893 10.1199 2.60989 12.4399 5.38989 12.9099C7.41989 13.2499 9.32989 12.6299 10.7299 11.4299L10.9999 11.7099V12.4999L15.2499 16.7499C15.6599 17.1599 16.3299 17.1599 16.7399 16.7499C17.1499 16.3399 17.1499 15.6699 16.7399 15.2599L12.4999 10.9999ZM6.49989 10.9999C4.00989 10.9999 1.99989 8.98989 1.99989 6.49989C1.99989 4.00989 4.00989 1.99989 6.49989 1.99989C8.98989 1.99989 10.9999 4.00989 10.9999 6.49989C10.9999 8.98989 8.98989 10.9999 6.49989 10.9999Z" fill="#949BB7"/>
+                                                </svg>                                                
+                                            </div>
+                                      </div>
+                                    <div class="select__item">Option 1</div>
+                                    <div class="select__item">Option 2</div>
+                                    <div class="select__item">Option 3</div>
+                                    <div class="select__item">Option 4</div>
+                                    <div class="select__item">Option 5</div>
+                                    <div class="select__item">Option 6</div>
+                                    <div class="select__item">Option 7</div>
+                                  </div>
+                                </div>
                             </div>
-                            </div>
-                          </div>
+                        </div>
                         <label for="adress">Address</label>
                         <input type="text" id="adress" minlength="0" maxlength="100" required>
                         <label for="postcode">Postcode</label>
                         <input type="tel" pattern="[0-9]{2}-[0-9]{3}" required>
-                      </div>
+                    </div>
                     </div>
                 <div class="divider"></div>
                 <div class="container">
@@ -135,8 +146,9 @@
                     </div>
                     <div class="column">
                         <div class="radio">
-                            <input type="checkbox" class="button" name="data" value="no" />
-                            <span class="helpertext">I want to protect my data by signing an NDA</span>
+                            <input type="checkbox" class="button" id="checkbox" name="data" value="no" />
+                            <label for="checkbox"></label>
+                            <span class="helpertext sometxt">I want to protect my data by signing an NDA</span>
                         </div>
                         <div class="radio">
                             <input type="checkbox" class="button" checked name="data" value="no" />
@@ -219,5 +231,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>

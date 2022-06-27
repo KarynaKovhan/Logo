@@ -72,7 +72,7 @@ label {
   font-weight: 600;
 }
 
-input, textarea{
+input, textarea, select, .select__header{
   color: #ffe;
   width: 392px;
   height: 49px;
@@ -80,42 +80,65 @@ input, textarea{
   border: 1px solid #949bb7;
   border-radius: 12px;
   margin: 12px 0px;
+  cursor: pointer;
 }
 
-  .custom-select_option{
-    color: #7e817f;
-    filter: hue-rotate(125deg);
-    font-size: 14px!important;
-    padding: 10px;
-  }
-    #my-select {
+.select__header:hover {
+border: 1px solid #FDFDFD;
+box-shadow: 0px 0px 20px rgba(234, 235, 241, 0.3);
+border-radius: 12px;
+}
 
-      color: #ffe;
+.select {
+	position: relative;
+	width: 250px;
+}
+.select.is-active .select__body {
+	display: block;}
+
+.select__header {
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: flex;
+}
+.select__current {
+	font-size: 18px;
+	line-height: 24px;
+	padding: 8px;
+}
+
+.select__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	height: 40px;
+	margin-left: auto;
+	text-align: center;
+	width: 40px;
+}
+
+.select__body {
+	border: 1px solid #cccccc;
+	border-top: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
   width: 392px;
-  height: 49px;
-  background: #111217;
-  border: 1px solid #949bb7;
-  border-radius: 12px;
-  margin: 12px 0px;
-    }
-     
-.form-group__house__house {
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-  margin-bottom: 23px;
+  z-index: 1;
+  background-color: #111217;;
 }
-.custom-select {
-  flex-basis: 100%;
-  padding: 10px;
-  max-width: 500px;
-  border-radius: 5px;
-  border: 2px solid #E1E1E1;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
+.select__item {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px;
+}
+
+.select__item:hover {
+	background-color: #EA51BC;
 }
 
 footer {
@@ -148,6 +171,7 @@ footer {
 
 .menu-item {
   margin: 0 15px;
+  cursor: pointer;
 }
 
 .avatar {
@@ -188,8 +212,8 @@ border: 1px solid #949BB7;
 
 .email-footer {
   background-color: #151a30;
-  width: 80%;
-  height: 30px;
+  width: 200px;
+  height: 38px;
 }
 .footer-item {
   width: fit-content;
@@ -218,8 +242,10 @@ height: 38px;
 background: linear-gradient(136.51deg, #7B20B5 0%, #EA51BC 94.14%);
 border-radius: 8px;
 }
+
+
 .check:checked + span:before {
-  content: '\2714';
+  content:'\2713';
   position: absolute;
   left: 10px;
   font-size:23px;
@@ -325,11 +351,76 @@ input[type="file"] {
 
 .button {
   accent-color: #EA51BC;
-  background: #151a30;
   width: 20px;
   height: 20px;
+border-radius: 4px;
+content:'\2713';
 }
+
 
 .first-block {
   width: 133%;
 }
+
+.search-box{
+  display: flex;
+  justify-content: center;
+}
+
+.search-box input {
+  z-index: 1;
+  width: 352px;
+height: 40px;
+background: #FDFDFD;
+border-radius: 12px;
+color: #000;
+}
+
+.search-box input:focus {
+  outline: none;
+}
+
+#searchsvg {
+  position: absolute;
+    top: 25px;
+    right: 35px;
+}
+
+.sometxt {
+  padding-left: 10px;
+}
+#calendar {
+  position: relative;
+  top: -50px;
+  left: 350px;
+}
+
+#checkbox{
+  display: none;
+}
+
+#checkbox + label{
+box-sizing: border-box;
+width: 20px;
+height: 20px;
+background: #111217;
+border: 1px solid #FDFDFD;
+border-radius: 4px;    
+}
+#checkbox + label:before{
+  font-size: 20px;
+}
+#checkbox:checked + label{
+  border: 1px solid #EA51BC ;    
+}
+#checkbox:checked + label:before{
+  color: #EA51BC;
+}
+
+
+
+
+
+
+
+
